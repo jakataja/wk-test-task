@@ -27,7 +27,38 @@
   }
 
   &-checkbox {
+    opacity: 0;
+  }
 
+  &-checkbox + &-label-text {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      background: $white;
+      border: 1px $border-gray solid;
+      content: '';
+      height: 12px;
+      position: absolute;
+      top: 5px;
+      left: -23px;
+      width: 12px;
+    }
+  }
+
+  &-checkbox:checked + &-label-text {
+    &::after {
+      border-left: 1px $red solid;
+      border-bottom: 1px $red solid;
+      content: '';
+      height: 3px;
+      left: -21px;
+      position: absolute;
+      top: 9px;
+      transform: rotateZ(-45deg);
+      width: 9px;
+    }
   }
 
   &-btn {
