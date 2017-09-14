@@ -23,25 +23,28 @@
     </header>
     <div class="page-content">
       <main class="page-main">
-        <div class="login-form-container">
-          <form action="" class="login-form">
-            <div>
-              <label>Username
-                <input type="email" placeholder="E.g., firstname.lastname@company.com" />
+        <div class="form-container">
+          <form action="" class="form">
+            <div class="form-row">
+              <label class="login-label">
+                <span class="login-label-text">Username</span>
+                <input class="login-input" type="email" placeholder="E.g., firstname.lastname@company.com" />
               </label>
             </div>
-            <div>
-              <label>Password
-                <input type="password" placeholder="Enter your password" />
+            <div class="form-row">
+              <label class="login-label">
+                <span class="login-label-text">Password</span>
+                <input class="login-input" type="password" placeholder="Enter your password" />
               </label>
+              <div class="forgot-link">
+                <a href="index.html" title="Forgot Username or Password?">Forgot Username or Password?</a>
+              </div>
             </div>
-            <div>
-              <a href="index.html">Forgot Username or Password?</a>
-            <div>
-              <label>Remember me <input type="checkbox" /></label>
+            <div class="form-row">
+              <label class="login-label">Remember me <input class="login-checkbox" type="checkbox" /></label>
             </div>
-            <div>
-              <input type="submit" value="Log in"/>
+            <div class="form-row">
+              <input class="login-btn" type="submit" value="Log in" />
             </div>
           </form>
         </div>

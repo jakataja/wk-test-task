@@ -1,10 +1,27 @@
 html {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 body {
   background: $white;
   color: $gray;
   margin: 0;
-  font: 400 1rem/20px $fira-sans;
+  font: 400 1rem/2em $fira-sans;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  border: 0;
+  box-sizing: border-box;
+  font-family: $fira-sans;
+  font-size: 13px;
+  padding: $space 15px;
+  width: 100%;
 }

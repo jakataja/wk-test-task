@@ -3,3 +3,40 @@
   margin-bottom: $space;
   padding: $space;
 }
+
+.form {
+
+  &-container {
+
+  }
+
+  &-row + &-row {
+    margin-top: $space;
+  }
+}
+
+.login {
+
+  &-label-text {
+    color: $dark-gray;
+    display: block;
+  }
+
+  &-input {
+    background: $white;
+  }
+
+  &-checkbox {
+
+  }
+
+  &-btn {
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.forgot-link {
+  margin-top: 4px;
+}
