@@ -1,7 +1,7 @@
 {
   "name": "wk-test-task",
   "author": "Katarzyna Bąk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "start": "gulp default"
   },
