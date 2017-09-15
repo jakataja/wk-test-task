@@ -5,7 +5,7 @@ html {
     font-size: 16px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     font-size: 20px;
   }
 }
@@ -27,7 +27,7 @@ a {
     font-size: 13px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     font-size: 16px;
   }
 
