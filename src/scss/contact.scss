@@ -9,6 +9,11 @@
       font-size: 13px;
       padding-top: $mid-space;
     }
+
+    @media (min-width: $desktop) {
+      font-size: 16px;
+      padding-top: $large-space;
+    }
   }
 }
 
@@ -20,6 +25,10 @@
 
     @media (min-width: $tablet) {
       padding: $space $mid-space;
+    }
+
+    @media (min-width: $desktop) {
+      padding: $space $large-space;
     }
   }
 

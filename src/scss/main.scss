@@ -9,17 +9,23 @@
     margin-right: $mid-space;
     padding: $mid-space;
   }
+
+  @media (min-width: $tablet) {
+    margin-right: $large-space;
+    padding: $mid-space $large-space;
+  }
 }
 
 .form {
 
-  &-container {
-
-  }
-
   &-row + &-row {
     margin-top: $space;
+
+    @media (min-width: $desktop) {
+      margin-top: $large-space;
+    }
   }
+
 }
 
 .login {
@@ -57,6 +63,12 @@
         top: 6px;
         width: 15px;
       }
+
+      @media (min-width: $desktop) {
+        height: 17px;
+        top: 10px;
+        width: 17px;
+      }
     }
   }
 
@@ -77,7 +89,13 @@
         left: -20px;
         top: 10px;
         width: 11px;
+      }
 
+      @media (min-width: $desktop) {
+        height: 6px;
+        left: -20px;
+        top: 14px;
+        width: 12px;
       }
     }
   }

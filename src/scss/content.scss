@@ -6,8 +6,11 @@
   @media (min-width: $tablet) {
     align-items: flex-start;
     flex-direction: row;
-    max-width: $tablet;
     margin: $mid-space;
+  }
+
+  @media (min-width: $tablet) {
+    margin: $large-space;
   }
 
 }

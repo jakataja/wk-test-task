@@ -6,7 +6,11 @@
     display: flex;
     justify-content: space-between;
     margin: 40px $mid-space 25px;
-    max-width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -17,6 +21,10 @@
 
   @media (min-width: $tablet) {
     width: 210px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 240px;
   }
 }
 

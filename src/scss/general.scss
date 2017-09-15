@@ -5,6 +5,9 @@ html {
     font-size: 16px;
   }
 
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -24,6 +27,10 @@ a {
     font-size: 13px;
   }
 
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -36,14 +43,17 @@ input[type="submit"] {
   border: 0;
   box-sizing: border-box;
   font-family: $fira-sans;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 300;
   padding: $space 15px;
   width: 100%;
 
   @media (min-width: $tablet) {
-    font-size: 16px;
     padding: $mid-space 15px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: $mid-space $large-space;
   }
 }
 

@@ -10,4 +10,9 @@
     max-width: 59%;
     padding: 0 $mid-space $mid-space;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    padding: 0 $large-space $large-space;
+  }
 }
