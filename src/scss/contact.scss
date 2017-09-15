@@ -1,21 +1,27 @@
-.page-contact {
-  border: 1px solid $border-gray;
-  padding: $space;
-}
-
-
 .contact-list {
 
   &-item {
     font-size: 11px;
     line-height: 1.8em;
-    padding-top: $space
-  }
+    padding-top: $space;
 
+    @media (min-width: $tablet) {
+      font-size: 13px;
+      padding-top: $mid-space;
+    }
+  }
 }
 
-
 .contact {
+
+  &-container {
+    border: 1px solid $border-gray;
+    padding: $space;
+
+    @media (min-width: $tablet) {
+      padding: $space $mid-space;
+    }
+  }
 
   &-header {
     color: $dark-gray;

@@ -1,18 +1,28 @@
 html {
   font-size: 13px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
 }
 
 body {
   background: $white;
   color: $gray;
-  margin: 0;
   font: 400 1rem/2em $fira-sans;
+  margin: 0;
+  text-align: center;
 }
 
 a {
   color: $blue;
   font-size: 11px;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 13px;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -27,8 +37,14 @@ input[type="submit"] {
   box-sizing: border-box;
   font-family: $fira-sans;
   font-size: 13px;
+  font-weight: 300;
   padding: $space 15px;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    padding: $mid-space 15px;
+  }
 }
 
 ul {

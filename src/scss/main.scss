@@ -2,6 +2,13 @@
   background: $light-gray;
   margin-bottom: $space;
   padding: $space;
+
+  @media (min-width: $tablet) {
+    flex-grow: 1;
+    margin-bottom: 0;
+    margin-right: $mid-space;
+    padding: $mid-space;
+  }
 }
 
 .form {
@@ -44,6 +51,12 @@
       top: 5px;
       left: -23px;
       width: 12px;
+
+      @media (min-width: $tablet) {
+        height: 15px;
+        top: 6px;
+        width: 15px;
+      }
     }
   }
 
@@ -58,6 +71,14 @@
       top: 9px;
       transform: rotateZ(-45deg);
       width: 9px;
+
+      @media (min-width: $tablet) {
+        height: 5px;
+        left: -20px;
+        top: 10px;
+        width: 11px;
+
+      }
     }
   }
 

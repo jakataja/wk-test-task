@@ -1,17 +1,26 @@
 .page-header {
   margin: $space;
+
+  @media (min-width: $tablet) {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px $mid-space 25px;
+    max-width: $tablet;
+  }
 }
 
 .logo {
   margin-left: -5px;
   width: 170px;
+  display: block;
 
-
-  &-container {
-
+  @media (min-width: $tablet) {
+    width: 210px;
   }
 }
 
 .subsidiary-container {
   color: $dark-gray;
+  font-weight: 300;
 }
