@@ -40,13 +40,22 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="submit"] {
-  border: 0;
+  border: 1px $white solid;
   box-sizing: border-box;
   font-family: $fira-sans;
   font-size: 1rem;
   font-weight: 300;
   padding: $space 15px;
   width: 100%;
+
+  &:focus {
+    border-color: $blue;
+    outline: 0;
+  }
+
+  &:invalid {
+    border-color: $red;
+  }
 
   @media (min-width: $tablet) {
     padding: $mid-space 15px;
@@ -55,6 +64,10 @@ input[type="submit"] {
   @media (min-width: $tablet) {
     padding: $mid-space $large-space;
   }
+}
+
+input[type="submit"] {
+  border: 0;
 }
 
 ul {
