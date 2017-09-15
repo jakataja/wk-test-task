@@ -1,18 +1,23 @@
 .footer-container {
   box-sizing: border-box;
-  font-size: 11px;
+  font-size: $s-font-size;
   line-height: 1.8em;
   padding: 0 $space $space;
   width: 100%;
 
   @media (min-width: $tablet) {
-    font-size: 13px;
+    font-size: $s-font-size-mid;
     max-width: 59%;
     padding: 0 $mid-space $mid-space;
   }
 
   @media (min-width: $desktop) {
-    font-size: 16px;
+    font-size: $s-font-size-large;
+    padding: 0 $large-space $large-space;
+  }
+
+  @media (min-width: $large-desktop) {
+    font-size: $s-font-size-xlarge;
     padding: 0 $large-space $large-space;
   }
 }

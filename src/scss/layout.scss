@@ -10,4 +10,8 @@
   @media (min-width: $desktop) {
     width: $desktop;
   }
+
+  @media (min-width: $large-desktop) {
+    width: $large-desktop;
+  }
 }

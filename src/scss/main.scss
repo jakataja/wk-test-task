@@ -10,7 +10,7 @@
     padding: $mid-space;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-right: $large-space;
     padding: $mid-space $large-space;
   }
@@ -48,6 +48,20 @@
     display: inline-block;
     position: relative;
 
+    @media (min-width: $tablet) {
+      padding-left: 5px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 10px;
+    }
+
+    @media (min-width: $large-desktop) {
+      padding-left: 15px;
+    }
+
+
+
     &::before {
       background: $white;
       border: 1px $border-gray solid;
@@ -68,6 +82,12 @@
         height: 17px;
         top: 10px;
         width: 17px;
+      }
+
+      @media (min-width: $large-desktop) {
+        height: 20px;
+        top: 12px;
+        width: 20px;
       }
     }
   }
@@ -96,6 +116,13 @@
         left: -20px;
         top: 14px;
         width: 12px;
+      }
+
+      @media (min-width: $large-desktop) {
+        height: 7px;
+        left: -19px;
+        top: 16px;
+        width: 13px;
       }
     }
   }

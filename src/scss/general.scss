@@ -8,6 +8,10 @@ html {
   @media (min-width: $desktop) {
     font-size: 20px;
   }
+
+  @media (min-width: $large-desktop) {
+    font-size: 24px;
+  }
 }
 
 body {
@@ -20,15 +24,19 @@ body {
 
 a {
   color: $blue;
-  font-size: 11px;
+  font-size: $s-font-size;
   text-decoration: none;
 
   @media (min-width: $tablet) {
-    font-size: 13px;
+    font-size: $s-font-size-mid;
   }
 
   @media (min-width: $desktop) {
-    font-size: 16px;
+    font-size: $s-font-size-large;
+  }
+
+  @media (min-width: $large-desktop) {
+    font-size: $s-font-size-xlarge;
   }
 
   &:hover {
