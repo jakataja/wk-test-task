@@ -3,21 +3,19 @@
 
 
   &-item {
-    font-size: $s-font-size;
     line-height: 1.8em;
     margin-left: 0;
     padding-left: $space*3;
     padding-top: $space;
     position: relative;
+    @include s-font;
 
     @media (min-width: $tablet) {
-      font-size: $s-font-size-mid;
       padding-left: $mid-space*2.5;
       padding-top: $mid-space;
     }
 
     @media (min-width: $desktop) {
-      font-size: $s-font-size-large;
       padding-left: $large-space*2;
       padding-top: $large-space;
     }
@@ -35,7 +33,7 @@
     }
 
     @media (min-width: $desktop) {
-      padding: $space $large-space;
+      padding: $space $large-space $large-space;
     }
   }
 

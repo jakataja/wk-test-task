@@ -1,0 +1,15 @@
+@mixin s-font {
+  font-size: $s-font-size;
+
+  @media (min-width: $tablet) {
+    font-size: $s-font-size-mid;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $s-font-size-large;
+  }
+
+  @media (min-width: $large-desktop) {
+    font-size: $s-font-size-xlarge;
+  }
+}

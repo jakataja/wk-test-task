@@ -24,20 +24,8 @@ body {
 
 a {
   color: $blue;
-  font-size: $s-font-size;
   text-decoration: none;
-
-  @media (min-width: $tablet) {
-    font-size: $s-font-size-mid;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: $s-font-size-large;
-  }
-
-  @media (min-width: $large-desktop) {
-    font-size: $s-font-size-xlarge;
-  }
+  @include s-font;
 
   &:hover {
     text-decoration: underline;
